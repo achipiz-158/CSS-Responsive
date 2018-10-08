@@ -1,0 +1,286 @@
+body {
+	background-color:  #02010a;
+}
+header {
+	padding-top: auto;
+	padding-bottom: 2%;
+	background-color: #5b7989;
+	color:white;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#menu {
+	padding: 10px 220px;
+}
+
+#menu .titulo{
+	float: left;
+	margin-left: 20px;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+#menu a {
+	height: 2em;
+	padding-top: 2%;
+	color: white;
+	text-decoration: none;
+	float:right;
+	margin-right: 20px;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#section {
+	background-color: #82c3a6;
+}
+
+#section2 {
+	background-color: #d5c75f;
+}
+
+#contenido > section > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+img {
+	-webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  	filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+h1{
+	font-family: 'FreeSans';
+  	font-size: 2em;
+  	font-variant: small-caps;
+  	font-weight: bold;
+}
+
+p{
+  	font-family: 'Indie Flower', cursive;
+  	font-size: 1.2em;
+}
+
+div [class*="imgs"]{
+	  	min-height: 200px;
+  		flex: 40%;
+	}
+
+	.imgs1 img{
+	  	-webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+	  	filter:drop-shadow(2px 2px 2px #82c3a6);
+	  	transition: transform 1s;
+	}
+	.imgs2 img{
+	  	-webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+	  	filter:drop-shadow(2px 2px 2px #82c3a6);
+	}
+
+	.contenedor{
+	  	display: flex;
+  		flex-flow: row wrap;
+	}
+
+	.imgs1 img:hover{
+		-webkit-transform: rotate(10deg);
+ 		-moz-transform: rotate(10deg);
+ 		transform: rotate(10deg);
+	}
+
+	.imgs2 img:hover{
+		transform: translate(5px, -20px);
+    	-webkit-transform: translate(5px, -20px);
+    	-o-transform: translate(5px, -20px); 
+    	-moz-transform: translate(5px, -20px);
+	}
+
+#section .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: #82c3a6;
+	width: 100%;
+}
+
+#section2 .contenedor > div {
+	text-align: center;
+	padding: 20px 10px 30px;
+	margin: 10px;
+	background-color: #d5c75f;
+	width: 50%;
+}
+
+#section2 .contenedor2 > div {
+	text-align: center;
+	padding: 10px;
+	background-color: #d5c75f;	
+}
+
+.c1 {
+	color: black;
+	background-color: #C6d5c5;
+}
+
+.c2 {
+	color: black;
+	background-color: #C6d5c5;
+}
+
+.c3 {
+	color: black;
+	background-color: #C6d5c5;
+}
+
+.c4 {
+	color: black;
+	background-color: #C6d5c5;
+}
+
+footer {
+	text-align: center;
+}
+.footer {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.c1, .c2, .c3, .c4, {
+	width: 100%;
+}
+
+@media screen and (max-width: 960px){
+
+	#contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+	#contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#section2
+	{
+		width: 100%;
+	}
+	.contenedor
+	{
+		width: 100%;
+	}
+	.contenedor2
+	{
+		width: 100%;
+	}
+	header
+	{
+		width:100%;
+	}
+	.titulo 
+	{
+		margin: 1rem;
+		text-align: center;
+	}
+	.links
+	{
+		margin: 2.5rem;
+  		padding: 1rem;
+		text-align: center;
+	}
+
+}
+
+@media (min-width: 320px) {
+	.c1, .c2, .c3, .c4 {
+		width: 100%;
+	}
+
+	.imgs3 {
+		-webkit-filter:blur(10px);
+	  	filter:blur(10px);
+	}
+	.imgs4 {
+		-webkit-filter:grayscale(100%);
+	  	filter:grayscale(100%);
+	}
+	.imgs5 {
+		-webkit-filter:sepia(90%);
+	  	filter:sepia(90%);
+	}
+}
+
+@media (min-width: 960px) {
+
+	.c1, .c2, .c3, .c4 {
+		width: 25%;
+	}
+
+	.footer {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contenedor2 {
+		margin: 0;
+	  	padding: 0;
+	  	width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.contenedor2 div {
+		box-sizing: border-box;
+	  	min-width: 100px;
+	}
+	.b1 {
+	  	color: #ddd;
+	  	background-color: #003476;
+		width: 33.33%;
+	}
+	.b2 {
+	  	color: #ddd;
+	  	background-color: #0062d2;
+		width: 33.33%;
+	}
+	.b3 {
+	  	color: #333;
+	  	background-color: #b4d2f7;
+		width: 33.33%;
+	}
+	.b4 {
+	  	color: #ddd;
+	  	background-color: #003476;
+		width: 33.33%;
+	}
+	.b5 {
+	  	color: #ddd;
+	  	background-color: #0062d2;
+		width: 33.33%;
+	}
+	.b6 {
+	  	color: #333;
+	  	background-color: #b4d2f7;
+		width: 33.33%;
+		}
+}
